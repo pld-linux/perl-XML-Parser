@@ -4,11 +4,11 @@ Summary(pl):	Modu³ perla XML-Parser
 Name:		perl-XML-Parser
 Version:	2.27
 Release:	1
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-Parser-%{version}.tar.gz
-Patch:		perl-XML-Parser-paths.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-Parser-%{version}.tar.gz
+Patch0:		perl-XML-Parser-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-21
 BuildRequires:	perl >= 5.005_03-14
 BuildRequires:	perl-URI
@@ -18,7 +18,7 @@ Requires:	%{perl_sitearch}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XML-Parser - module for parsing XML documents. 
+XML-Parser - module for parsing XML documents.
 
 %description -l pl
 XML-Parser - modu³ analizuj±cy dokumenty XML.
@@ -33,12 +33,12 @@ make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 
 make install DESTDIR=$RPM_BUILD_ROOT
 
 rm -f samples/*~
-install samples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install samples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/XML/Parser
@@ -47,7 +47,7 @@ install samples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-	$RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}/*.xml \
+	$RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}/*.xml \
         Changes README
 
 %clean
@@ -68,4 +68,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+%{_prefix}/src/examples/%{name}-%{version}
