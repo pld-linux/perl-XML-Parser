@@ -19,7 +19,7 @@ Summary(sv):	XML::Parser Perlmodul
 Summary(uk):	Модуль для Perl XML::Parser
 Summary(zh_CN):	XML::Parser Perl дё©И
 Name:		perl-XML-Parser
-Version:	2.33
+Version:	2.34
 Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
