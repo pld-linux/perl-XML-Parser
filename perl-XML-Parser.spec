@@ -31,7 +31,6 @@ BuildRequires:	perl-URI
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-libwww
 BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:  chrpath
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
