@@ -2,13 +2,13 @@
 Summary:	XML-Parser perl module
 Summary(pl):	Modu³ perla XML-Parser
 Name:		perl-XML-Parser
-Version:	2.29
-Release:	2
+Version:	2.30
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-Parser-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-Parser.%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-21
 BuildRequires:	perl >= 5.6
@@ -16,6 +16,8 @@ BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
 %requires_eq	perl
 Requires:	%{perl_sitearch}
+Requires: expat
+BuildRequires: expat-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
