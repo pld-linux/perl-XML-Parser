@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-Summary:	XML-Parser perl module
-Summary(pl):	Modu³ perla XML-Parser
+Summary:	XML::Parser perl module
+Summary(pl):	Modu³ perla XML::Parser
 Name:		perl-XML-Parser
 Version:	2.31
 Release:	1
@@ -16,10 +16,10 @@ BuildRequires:	expat-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-XML-Parser - module for parsing XML documents.
+XML::Parser - module for parsing XML documents.
 
 %description -l pl
-XML-Parser - modu³ analizuj±cy dokumenty XML.
+XML::Parser - modu³ analizuj±cy dokumenty XML.
 
 %prep
 %setup -q -n XML-Parser-%{version}
