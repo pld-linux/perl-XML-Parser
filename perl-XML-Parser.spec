@@ -24,7 +24,7 @@ Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	de310166d54941cc51a42213dcfe468f
+# Source0-md5:	84d9e0001fe01c14867256c3fe115899
 Patch0:		%{name}-paths.patch
 BuildRequires:	expat-devel
 BuildRequires:	perl-URI
