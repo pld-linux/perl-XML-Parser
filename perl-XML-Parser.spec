@@ -79,7 +79,7 @@ XML::Parser - En perl-modul för att tolka XML-dokument.
 %patch -p0
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
