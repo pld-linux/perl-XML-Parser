@@ -3,7 +3,7 @@ Summary:	XML-Parser perl module
 Summary(pl):	Modu³ perla XML-Parser
 Name:		perl-XML-Parser
 Version:	2.30
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/XML/XML-Parser.%{version}.tar.gz
@@ -38,19 +38,16 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 rm -f samples/*~
 install samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/*.xml \
-        Changes README
+gzip -9nf $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}/*.xml
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
-%dir %{perl_sitearch}/XML
+%doc Changes README
 %{perl_sitearch}/XML/Parser.pm
 %{perl_sitearch}/XML/Parser
-%dir %{perl_sitearch}/auto/XML
 %dir %{perl_sitearch}/auto/XML/Parser
 %dir %{perl_sitearch}/auto/XML/Parser/Expat
 %{perl_sitearch}/auto/XML/Parser/Expat/Expat.bs
