@@ -19,18 +19,18 @@ Summary(sv):	XML::Parser Perlmodul
 Summary(uk):	Модуль для Perl XML::Parser
 Summary(zh_CN):	XML::Parser Perl дё©И
 Name:		perl-XML-Parser
-Version:	2.31
-Release:	3
+Version:	2.32
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5: 01f136a5f71631845979fd2b797b3ce3
+# Source0-md5:	47581ea9144975daf1009ebc80a57d29
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 4.1-13
-BuildRequires:	perl-devel >= 5.6
-BuildRequires:	perl-URI
-BuildRequires:	perl-libwww
 BuildRequires:	expat-devel
+BuildRequires:	perl-URI
+BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-libwww
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -82,13 +82,15 @@ XML::Parser - En perl-modul fЖr att tolka XML-dokument.
 %build
 %{__perl} Makefile.PL \
 	INSTALLDIRS=vendor 
-%{__make} OPTIMIZE="%{rpmcflags}"
+%{__make} \
+	OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 rm -f samples/*~ samples/*.orig
 install samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
