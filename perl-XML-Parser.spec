@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	XML
-%define	pnam	Parser
+%define		pdir	XML
+%define		pnam	Parser
 Summary:	XML::Parser Perl module
 Summary(cs):	Modul XML::Parser pro Perl
 Summary(da):	Perlmodul XML::Parser
