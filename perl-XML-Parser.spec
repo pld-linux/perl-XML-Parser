@@ -29,7 +29,7 @@ XML-Parser - modu³ analizuj±cy dokumenty XML.
 
 %build
 perl Makefile.PL
-%{__make} OPTIMIZE="%{?debug:-O0 -g}%{!?debug:$RPM_OPT_FLAGS}"
+%{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
