@@ -22,3 +22,11 @@
  #
  # $Revision$
  #
+--- samples.paths/canonical	Sun Sep 26 00:27:40 1999
++++ samples/canonical	Mon Dec  6 13:50:37 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl -w
++#!/usr/bin/perl -w
+ #
+ # Copyright 1999 Clark Cooper <coopercc@netheaven.com>
+ # All rights reserved.
