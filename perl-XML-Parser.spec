@@ -1,3 +1,4 @@
+%include	/usr/lib/rpm/macros.perl
 Summary:	XML-Parser perl module
 Summary(pl):	Modu³ perla XML-Parser
 Name:		perl-XML-Parser
@@ -8,7 +9,8 @@ Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-Parser-%{version}.tar.gz
 Patch:		perl-XML-Parser-paths.patch
-BuildRequires:	perl >= 5.005_03-10
+BuildRequires:	rpm-perlprov
+BuildRequires:	perl >= 5.005_03-12
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
@@ -25,7 +27,7 @@ XML-Parser - modu³ analizuj±cy dokumenty XML.
 
 %build
 perl Makefile.PL
-make
+make OPTIMIZE="$RPM_OPT_FLAGS"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -36,12 +38,13 @@ make install DESTDIR=$RPM_BUILD_ROOT
 install samples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
 
 (
-  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/XML/Parser/Expat
+  cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/XML/Parser
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
   mv .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
+	$RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}/*.xml \
         Changes README
 
 %clean
