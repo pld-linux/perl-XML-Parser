@@ -3,7 +3,7 @@ Summary:	XML-Parser perl module
 Summary(pl):	Modu³ perla XML-Parser
 Name:		perl-XML-Parser
 Version:	2.30
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
