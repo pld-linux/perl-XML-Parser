@@ -10,7 +10,7 @@ Summary(fr):	Module Perl XML::Parser
 Summary(it):	Modulo di Perl XML::Parser
 Summary(ja):	XML::Parser Perl ¥â¥¸¥å¡¼¥ë
 Summary(ko):	XML::Parser ÆÞ ¸ðÁÙ
-Summary(no):	Perlmodul XML::Parser
+Summary(nb):	Perlmodul XML::Parser
 Summary(pl):	Modu³ Perla XML::Parser
 Summary(pt):	Módulo de Perl XML::Parser
 Summary(pt_BR):	Módulo Perl XML::Parser
@@ -60,7 +60,7 @@ XML¥É¥­¥å¥á¥ó¥È ²òÀÏÍÑ¤Î perl ¥â¥¸¥å¡¼¥ë ¤Ç¤¹¡£
 %description -l ko
 XML::Parser - XML ¹®¼­µéÀ» ÆÄ½ÌÇÏ´Âµ¥ »ç¿ëµÇ´Â ÆÞ ¸ðÁÙ.
 
-%description -l no
+%description -l nb
 XML::Parser - En perlmodul for parsing av XML-dokumenter.
 
 %description -l pl
