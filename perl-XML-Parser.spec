@@ -16,8 +16,7 @@ BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
 %requires_eq	perl
 Requires:	%{perl_sitearch}
-Requires: expat
-BuildRequires: expat-devel
+BuildRequires:	expat-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
