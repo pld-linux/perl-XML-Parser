@@ -20,7 +20,7 @@ Summary(uk):	Модуль для Perl XML::Parser
 Summary(zh_CN):	XML::Parser Perl дё©И
 Name:		perl-XML-Parser
 Version:	2.31
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
