@@ -20,12 +20,12 @@ Summary(uk):	Модуль для Perl XML::Parser
 Summary(zh_CN):	XML::Parser Perl дё©И
 Name:		perl-XML-Parser
 Version:	2.31
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
-BuildRequires:	rpm-perlprov >= 3.0.3-21
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-URI
 BuildRequires:	perl-libwww
@@ -79,7 +79,8 @@ XML::Parser - En perl-modul fЖr att tolka XML-dokument.
 %patch -p0
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make} OPTIMIZE="%{rpmcflags}"
 
 %install
@@ -99,11 +100,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitearch}/XML/Parser.pm
-%{perl_sitearch}/XML/Parser
-%dir %{perl_sitearch}/auto/XML/Parser
-%dir %{perl_sitearch}/auto/XML/Parser/Expat
-%{perl_sitearch}/auto/XML/Parser/Expat/Expat.bs
-%attr(755,root,root) %{perl_sitearch}/auto/XML/Parser/Expat/Expat.so
+%{perl_vendorarch}/XML/Parser.pm
+%{perl_vendorarch}/XML/Parser
+%dir %{perl_vendorarch}/auto/XML/Parser
+%dir %{perl_vendorarch}/auto/XML/Parser/Expat
+%{perl_vendorarch}/auto/XML/Parser/Expat/Expat.bs
+%attr(755,root,root) %{perl_vendorarch}/auto/XML/Parser/Expat/Expat.so
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
