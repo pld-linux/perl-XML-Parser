@@ -11,6 +11,8 @@ Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/XML/XML-Parser-%{version}
 Patch:		perl-XML-Parser-paths.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-21
 BuildRequires:	perl >= 5.005_03-14
+BuildRequires:	perl-URI
+BuildRequires:	perl-libwww
 %requires_eq	perl
 Requires:	%{perl_sitearch}
 BuildRoot:	/tmp/%{name}-%{version}-root
