@@ -82,7 +82,7 @@ XML::Parser - En perl-modul för att tolka XML-dokument.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p0
+%patch0 -p0
 
 %build
 %{__perl} Makefile.PL \
