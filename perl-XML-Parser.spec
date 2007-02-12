@@ -6,22 +6,22 @@
 %define		pdir	XML
 %define		pnam	Parser
 Summary:	XML::Parser Perl module
-Summary(cs):	Modul XML::Parser pro Perl
-Summary(da):	Perlmodul XML::Parser
-Summary(de):	XML::Parser Perl Modul
-Summary(es):	Módulo de Perl XML::Parser
-Summary(fr):	Module Perl XML::Parser
-Summary(it):	Modulo di Perl XML::Parser
-Summary(ja):	XML::Parser Perl ¥â¥¸¥å¡¼¥ë
-Summary(ko):	XML::Parser ÆŞ ¸ğÁÙ
-Summary(nb):	Perlmodul XML::Parser
-Summary(pl):	Modu³ Perla XML::Parser
-Summary(pt):	Módulo de Perl XML::Parser
-Summary(pt_BR):	Módulo Perl XML::Parser
-Summary(ru):	íÏÄÕÌØ ÄÌÑ Perl XML::Parser
-Summary(sv):	XML::Parser Perlmodul
-Summary(uk):	íÏÄÕÌØ ÄÌÑ Perl XML::Parser
-Summary(zh_CN):	XML::Parser Perl Ä£¿é
+Summary(cs.UTF-8):   Modul XML::Parser pro Perl
+Summary(da.UTF-8):   Perlmodul XML::Parser
+Summary(de.UTF-8):   XML::Parser Perl Modul
+Summary(es.UTF-8):   MÃ³dulo de Perl XML::Parser
+Summary(fr.UTF-8):   Module Perl XML::Parser
+Summary(it.UTF-8):   Modulo di Perl XML::Parser
+Summary(ja.UTF-8):   XML::Parser Perl ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ«
+Summary(ko.UTF-8):   XML::Parser í„ ëª¨ì¤„
+Summary(nb.UTF-8):   Perlmodul XML::Parser
+Summary(pl.UTF-8):   ModuÅ‚ Perla XML::Parser
+Summary(pt.UTF-8):   MÃ³dulo de Perl XML::Parser
+Summary(pt_BR.UTF-8):   MÃ³dulo Perl XML::Parser
+Summary(ru.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl XML::Parser
+Summary(sv.UTF-8):   XML::Parser Perlmodul
+Summary(uk.UTF-8):   ĞœĞ¾Ğ´ÑƒĞ»ÑŒ Ğ´Ğ»Ñ Perl XML::Parser
+Summary(zh_CN.UTF-8):   XML::Parser Perl æ¨¡å—
 Name:		perl-XML-Parser
 Version:	2.34
 Release:	4
@@ -41,44 +41,44 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 XML::Parser - A Perl module for parsing XML documents.
 
-%description -l cs
-XML::Parser - Modul do Perlu pro parsování XML dokumentù.
+%description -l cs.UTF-8
+XML::Parser - Modul do Perlu pro parsovÃ¡nÃ­ XML dokumentÅ¯.
 
-%description -l da
+%description -l da.UTF-8
 XML::Parser - Et perlmodul for fortolkning af XML-dokumenter.
 
-%description -l de
-XML::Parser - Ein Perl-Modul für das Parsen von XML-Dokumenten.
+%description -l de.UTF-8
+XML::Parser - Ein Perl-Modul fÃ¼r das Parsen von XML-Dokumenten.
 
-%description -l es
-XML::Parser - Módulo Perl para pasear documentos XML.
+%description -l es.UTF-8
+XML::Parser - MÃ³dulo Perl para pasear documentos XML.
 
-%description -l fr
+%description -l fr.UTF-8
 XML::Parser - Module Perl pour l'analyse de documents XML.
 
-%description -l it
+%description -l it.UTF-8
 XML::Parser - Un modulo Perl per analizzare documenti XML.
 
-%description -l ja
-XML¥É¥­¥å¥á¥ó¥È ²òÀÏÍÑ¤Î perl ¥â¥¸¥å¡¼¥ë ¤Ç¤¹¡£
+%description -l ja.UTF-8
+XMLãƒ‰ã‚­ãƒ¥ãƒ¡ãƒ³ãƒˆ è§£æç”¨ã® perl ãƒ¢ã‚¸ãƒ¥ãƒ¼ãƒ« ã§ã™ã€‚
 
-%description -l ko
-XML::Parser - XML ¹®¼­µéÀ» ÆÄ½ÌÇÏ´Âµ¥ »ç¿ëµÇ´Â ÆŞ ¸ğÁÙ.
+%description -l ko.UTF-8
+XML::Parser - XML ë¬¸ì„œë“¤ì„ íŒŒì‹±í•˜ëŠ”ë° ì‚¬ìš©ë˜ëŠ” í„ ëª¨ì¤„.
 
-%description -l nb
+%description -l nb.UTF-8
 XML::Parser - En perlmodul for parsing av XML-dokumenter.
 
-%description -l pl
-XML::Parser - modu³ Perla analizuj±cy dokumenty XML.
+%description -l pl.UTF-8
+XML::Parser - moduÅ‚ Perla analizujÄ…cy dokumenty XML.
 
-%description -l pt
-XML::Parser - Um módulo de Perl para analisar documentos em XML.
+%description -l pt.UTF-8
+XML::Parser - Um mÃ³dulo de Perl para analisar documentos em XML.
 
-%description -l sv
-XML::Parser - En perl-modul för att tolka XML-dokument.
+%description -l sv.UTF-8
+XML::Parser - En perl-modul fÃ¶r att tolka XML-dokument.
 
-%description -l zh_CN
-ÓÃÀ´½âÎö XML ÎÄµµ µÄ Perl Ä£¿é¡£
+%description -l zh_CN.UTF-8
+ç”¨æ¥è§£æ XML æ–‡æ¡£ çš„ Perl æ¨¡å—ã€‚
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
