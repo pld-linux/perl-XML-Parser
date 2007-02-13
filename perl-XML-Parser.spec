@@ -6,22 +6,22 @@
 %define		pdir	XML
 %define		pnam	Parser
 Summary:	XML::Parser Perl module
-Summary(cs.UTF-8):   Modul XML::Parser pro Perl
-Summary(da.UTF-8):   Perlmodul XML::Parser
-Summary(de.UTF-8):   XML::Parser Perl Modul
-Summary(es.UTF-8):   Módulo de Perl XML::Parser
-Summary(fr.UTF-8):   Module Perl XML::Parser
-Summary(it.UTF-8):   Modulo di Perl XML::Parser
-Summary(ja.UTF-8):   XML::Parser Perl モジュール
-Summary(ko.UTF-8):   XML::Parser 펄 모줄
-Summary(nb.UTF-8):   Perlmodul XML::Parser
-Summary(pl.UTF-8):   Moduł Perla XML::Parser
-Summary(pt.UTF-8):   Módulo de Perl XML::Parser
-Summary(pt_BR.UTF-8):   Módulo Perl XML::Parser
-Summary(ru.UTF-8):   Модуль для Perl XML::Parser
-Summary(sv.UTF-8):   XML::Parser Perlmodul
-Summary(uk.UTF-8):   Модуль для Perl XML::Parser
-Summary(zh_CN.UTF-8):   XML::Parser Perl 模块
+Summary(cs.UTF-8):	Modul XML::Parser pro Perl
+Summary(da.UTF-8):	Perlmodul XML::Parser
+Summary(de.UTF-8):	XML::Parser Perl Modul
+Summary(es.UTF-8):	Módulo de Perl XML::Parser
+Summary(fr.UTF-8):	Module Perl XML::Parser
+Summary(it.UTF-8):	Modulo di Perl XML::Parser
+Summary(ja.UTF-8):	XML::Parser Perl モジュール
+Summary(ko.UTF-8):	XML::Parser 펄 모줄
+Summary(nb.UTF-8):	Perlmodul XML::Parser
+Summary(pl.UTF-8):	Moduł Perla XML::Parser
+Summary(pt.UTF-8):	Módulo de Perl XML::Parser
+Summary(pt_BR.UTF-8):	Módulo Perl XML::Parser
+Summary(ru.UTF-8):	Модуль для Perl XML::Parser
+Summary(sv.UTF-8):	XML::Parser Perlmodul
+Summary(uk.UTF-8):	Модуль для Perl XML::Parser
+Summary(zh_CN.UTF-8):	XML::Parser Perl 模块
 Name:		perl-XML-Parser
 Version:	2.34
 Release:	4
