@@ -24,7 +24,7 @@ Summary(uk.UTF-8):	Модуль для Perl XML::Parser
 Summary(zh_CN.UTF-8):	XML::Parser Perl 模块
 Name:		perl-XML-Parser
 Version:	2.34
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -90,6 +90,7 @@ XML::Parser - En perl-modul för att tolka XML-dokument.
 	EXPATLIBPATH=%{_libdir} \
 	EXPATINCPATH=%{_includedir}
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
