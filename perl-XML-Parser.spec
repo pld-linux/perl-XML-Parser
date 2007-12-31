@@ -23,13 +23,13 @@ Summary(sv.UTF-8):	XML::Parser Perlmodul
 Summary(uk.UTF-8):	Модуль для Perl XML::Parser
 Summary(zh_CN.UTF-8):	XML::Parser Perl 模块
 Name:		perl-XML-Parser
-Version:	2.34
-Release:	5
+Version:	2.36
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	84d9e0001fe01c14867256c3fe115899
+# Source0-md5:	1b868962b658bd87e1563ecd56498ded
 Patch0:		%{name}-paths.patch
 BuildRequires:	expat-devel
 BuildRequires:	perl-URI
