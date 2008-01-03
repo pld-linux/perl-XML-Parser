@@ -5,32 +5,30 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	XML
 %define		pnam	Parser
-Summary:	XML::Parser Perl module
-Summary(cs.UTF-8):	Modul XML::Parser pro Perl
-Summary(da.UTF-8):	Perlmodul XML::Parser
-Summary(de.UTF-8):	XML::Parser Perl Modul
-Summary(es.UTF-8):	Módulo de Perl XML::Parser
-Summary(fr.UTF-8):	Module Perl XML::Parser
-Summary(it.UTF-8):	Modulo di Perl XML::Parser
-Summary(ja.UTF-8):	XML::Parser Perl モジュール
-Summary(ko.UTF-8):	XML::Parser 펄 모줄
-Summary(nb.UTF-8):	Perlmodul XML::Parser
-Summary(pl.UTF-8):	Moduł Perla XML::Parser
-Summary(pt.UTF-8):	Módulo de Perl XML::Parser
-Summary(pt_BR.UTF-8):	Módulo Perl XML::Parser
-Summary(ru.UTF-8):	Модуль для Perl XML::Parser
-Summary(sv.UTF-8):	XML::Parser Perlmodul
-Summary(uk.UTF-8):	Модуль для Perl XML::Parser
-Summary(zh_CN.UTF-8):	XML::Parser Perl 模块
+Summary:	XML::Parser - A Perl module for parsing XML documents
+Summary(cs.UTF-8):	XML::Parser - Modul do Perlu pro parsování XML dokumentů
+Summary(da.UTF-8):	XML::Parser - Et perlmodul for fortolkning af XML-dokumenter
+Summary(de.UTF-8):	XML::Parser - Ein Perl-Modul für das Parsen von XML-Dokumenten
+Summary(es.UTF-8):	XML::Parser - Módulo Perl para pasear documentos XML
+Summary(fr.UTF-8):	XML::Parser - Module Perl pour l'analyse de documents XML
+Summary(it.UTF-8):	XML::Parser - Un modulo Perl per analizzare documenti XML
+Summary(ja.UTF-8):	XMLドキュメント 解析用の perl モジュール です。
+Summary(ko.UTF-8):	XML::Parser - XML 문서들을 파싱하는데 사용되는 펄 모줄
+Summary(nb.UTF-8):	XML::Parser - En perlmodul for parsing av XML-dokumenter
+Summary(pl.UTF-8):	XML::Parser - moduł Perla analizujący dokumenty XML
+Summary(pt.UTF-8):	XML::Parser - Um módulo de Perl para analisar documentos em XML
+Summary(sv.UTF-8):	XML::Parser - En perl-modul för att tolka XML-dokument
+Summary(zh_CN.UTF-8):	用来解析 XML 文档 的 Perl 模块。
 Name:		perl-XML-Parser
 Version:	2.36
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	1b868962b658bd87e1563ecd56498ded
 Patch0:		%{name}-paths.patch
+URL:		http://search.cpan.org/dist/XML-Parser/
 BuildRequires:	expat-devel
 BuildRequires:	perl-URI
 BuildRequires:	perl-devel >= 1:5.8.0
