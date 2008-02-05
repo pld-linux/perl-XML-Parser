@@ -21,7 +21,7 @@ Summary(sv.UTF-8):	XML::Parser - En perl-modul för att tolka XML-dokument
 Summary(zh_CN.UTF-8):	用来解析 XML 文档 的 Perl 模块。
 Name:		perl-XML-Parser
 Version:	2.36
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -95,7 +95,7 @@ XML::Parser - En perl-modul för att tolka XML-dokument.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+install -d $RPM_BUILD_ROOT{%{_examplesdir}/%{name}-%{version},%{perl_vendorlib}/XML/Parser/Style}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
@@ -114,7 +114,7 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorarch}/XML/Parser
 %dir %{perl_vendorarch}/auto/XML/Parser
 %dir %{perl_vendorarch}/auto/XML/Parser/Expat
-%{perl_vendorarch}/auto/XML/Parser/Expat/Expat.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/Parser/Expat/Expat.so
 %{_mandir}/man3/*
+%{perl_vendorlib}/XML/Parser/Style
 %{_examplesdir}/%{name}-%{version}
