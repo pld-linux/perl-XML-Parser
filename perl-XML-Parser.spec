@@ -20,13 +20,14 @@ Summary(pt.UTF-8):	XML::Parser - Um módulo de Perl para analisar documentos em 
 Summary(sv.UTF-8):	XML::Parser - En perl-modul för att tolka XML-dokument
 Summary(zh_CN.UTF-8):	用来解析 XML 文档 的 Perl 模块。
 Name:		perl-XML-Parser
-Version:	2.36
-Release:	6
+Version:	2.40
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	1b868962b658bd87e1563ecd56498ded
+#Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-authors/id/C/CH/CHORNY/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	c66e9adba003d0667cc40115ccd837a5
 Patch0:		%{name}-paths.patch
 URL:		http://search.cpan.org/dist/XML-Parser/
 BuildRequires:	expat-devel
@@ -115,6 +116,7 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/XML/Parser
 %dir %{perl_vendorarch}/auto/XML/Parser/Expat
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/Parser/Expat/Expat.so
-%{_mandir}/man3/*
-%{perl_vendorlib}/XML/Parser/Style
+%{perl_vendorarch}/auto/XML/Parser/Expat/Expat.bs
+%dir %{perl_vendorlib}/XML/Parser/Style
+%{_mandir}/man3/XML::Parser*.3pm*
 %{_examplesdir}/%{name}-%{version}
