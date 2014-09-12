@@ -115,7 +115,6 @@ rm -rf $RPM_BUILD_ROOT
 %dir %{perl_vendorarch}/auto/XML/Parser
 %dir %{perl_vendorarch}/auto/XML/Parser/Expat
 %attr(755,root,root) %{perl_vendorarch}/auto/XML/Parser/Expat/Expat.so
-%{perl_vendorarch}/auto/XML/Parser/Expat/Expat.bs
 %dir %{perl_vendorlib}/XML/Parser/Style
 %{_mandir}/man3/XML::Parser*.3pm*
 %{_examplesdir}/%{name}-%{version}
