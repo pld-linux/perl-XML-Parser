@@ -20,13 +20,13 @@ Summary(pt.UTF-8):	XML::Parser - Um módulo de Perl para analisar documentos em 
 Summary(sv.UTF-8):	XML::Parser - En perl-modul för att tolka XML-dokument
 Summary(zh_CN.UTF-8):	用来解析 XML 文档 的 Perl 模块。
 Name:		perl-XML-Parser
-Version:	2.44
-Release:	5
+Version:	2.46
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	af4813fe3952362451201ced6fbce379
+# Source0-md5:	80bb18a8e6240fcf7ec2f7b57601c170
 Patch0:		%{name}-paths.patch
 URL:		http://search.cpan.org/dist/XML-Parser/
 BuildRequires:	expat-devel
