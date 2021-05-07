@@ -20,7 +20,7 @@ Summary(sv.UTF-8):	XML::Parser - En perl-modul för att tolka XML-dokument
 Summary(zh_CN.UTF-8):	用来解析 XML 文档 的 Perl 模块。
 Name:		perl-XML-Parser
 Version:	2.46
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -80,7 +80,7 @@ XML::Parser - En perl-modul för att tolka XML-dokument.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p0
+%patch0 -p1
 
 %build
 %{__perl} Makefile.PL \
