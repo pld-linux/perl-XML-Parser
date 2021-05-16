@@ -27,7 +27,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	80bb18a8e6240fcf7ec2f7b57601c170
 Patch0:		%{name}-paths.patch
-URL:		http://search.cpan.org/dist/XML-Parser/
+URL:		https://metacpan.org/release/XML-Parser
 BuildRequires:	expat-devel
 BuildRequires:	perl-URI
 BuildRequires:	perl-devel >= 1:5.8.0
